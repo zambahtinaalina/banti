@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/model-viewer.min.js"></script>
+    <title>Бантами — Акции</title>
+</head>
+<body>
+    <div class="bespdost">
+        <p>Бесплатная доставка от 2000 ₽!</p>
+    </div>
+    <div class="container">
+        <header class="shapka">
+            <div class="ban">
+                 <a href="index.html"><img class="bant1" src="img/logo.png"></a>
+                <div class="hz">
+                    <ul class="spisok">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="news.html">Новинки</a></li>
+                        <li><a href="actions.html" class="active">Акции</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                    </ul>
+                </div>
+                <ul class="spis">
+                    <li class="search-container">
+                        <input type="text" id="searchInput" placeholder="Поиск..." onkeyup="searchProducts()" class="search-input">
+                    <img src="img/Search.png" alt="Search" class="search-icon" onclick="toggleSearch()">
+                    </li>
+                    <li><a href="favorites.html"><img src="img/Heart.png" alt="izbrannoe"></a></li>
+                    <li><a href="cart.html"><img src="img/Shopping cart.png" alt="korzina"></a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="hero-left">
+                    <img src="img/women.png" alt="Девушка в бантах" class="hero-girl-img">
+                </div>
+                <div class="hero-content">
+                    <p class="hero-title">Акция!<br>При покупке кольца<br>и браслета - серьги в подарок!</p>
+                    <a href="catalog.html" class="btn">В каталог</a>
+                </div>
+                <div class="hero-right">
+                    <img src="img/banti.png" alt="Розовые банты" class="hero-bows-img">
+                </div>
+            </section>
+            <div class="about-header">
+     <p class="section-title">Специальные акции, предложения и скидки для вас!</p>
+    <model-viewer class="about-3d-bow" src="pink-bow.glb" autoplay loop camera-controls interaction-prompt="none" shadow-intensity="1" alt="Парящий 3D бант"></model-viewer>
+</div>
+        <section class="catalog-grid">
+            <div class="product-card">
+                <div class="product-img-wrapper"><img src="img/zvez.png" alt="Заколки звёзды" class="product-img"></div>
+                    <p class="product-name">Заколки звёзды</p>
+                    <p class="product-price"><span class="old-price">150₽</span> 100₽</p>
+                    <div class="product-actions">
+                        <a href="#" class="btn-buy">В корзину</a>
+                        <button class="btn-fav"><img src="img/Heart.png" alt="Like"></button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img-wrapper"><img src="img/rezpr.png" alt="Резинка пружинка" class="product-img"></div>
+                    <p class="product-name">Резинка</p>
+                    <p class="product-price"><span class="old-price">40₽</span> 25₽</p>
+                    <div class="product-actions">
+                        <a href="#" class="btn-buy">В корзину</a>
+                        <button class="btn-fav"><img src="img/Heart.png" alt="Like"></button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img-wrapper"><img src="img/obser.png" alt="Ободок сердечки" class="product-img"></div>
+                    <p class="product-name">Ободок сердце</p>
+                    <p class="product-price"><span class="old-price">500₽</span> 400₽</p>
+                    <div class="product-actions">
+                        <a href="#" class="btn-buy">В корзину</a>
+                        <button class="btn-fav"><img src="img/Heart.png" alt="Like"></button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img-wrapper"><img src="img/sil.png" alt="Резинки силикон" class="product-img"></div>
+                    <p class="product-name">Резинки мини</p>
+                    <p class="product-price"><span class="old-price">90₽</span> 70₽</p>
+                    <div class="product-actions">
+                        <a href="#" class="btn-buy">В корзину</a>
+                        <button class="btn-fav"><img src="img/Heart.png" alt="Like"></button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img-wrapper"><img src="img/zag.png" alt="Зажимы" class="product-img"></div>
+                    <p class="product-name">Зажимы</p>
+                    <p class="product-price"><span class="old-price">170₽</span> 140₽</p>
+                    <div class="product-actions">
+                        <a href="#" class="btn-buy">В корзину</a>
+                        <button class="btn-fav"><img src="img/Heart.png" alt="Like"></button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img-wrapper"><img src="img/rezbus.png" alt="Резинка бусина" class="product-img"></div>
+                    <p class="product-name">Резинка бусина</p>
+                    <p class="product-price"><span class="old-price">200₽</span> 170₽</p>
+                    <div class="product-actions">
+                        <a href="#" class="btn-buy">В корзину</a>
+                        <button class="btn-fav"><img src="img/Heart.png" alt="Like"></button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img-wrapper"><img src="img/zakgoroh.png" alt="Заколки горошек" class="product-img"></div>
+                    <p class="product-name">Заколки набор</p>
+                    <p class="product-price"><span class="old-price">180₽</span> 160₽</p>
+                    <div class="product-actions">
+                        <a href="#" class="btn-buy">В корзину</a>
+                        <button class="btn-fav"><img src="img/Heart.png" alt="Like"></button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img-wrapper"><img src="img/shpil.png" alt="Шпилька двурогая" class="product-img"></div>
+                    <p class="product-name">Шпилька</p>
+                    <p class="product-price"><span class="old-price">170₽</span> 140₽</p>
+                    <div class="product-actions">
+                        <a href="#" class="btn-buy">В корзину</a>
+                        <button class="btn-fav"><img src="img/Heart.png" alt="Like"></button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Бантами</h3>
+                <p>Мы верим,<br>что красота<br>кроется в деталях.</p>
+            </div>
+            <div class="footer-col">
+                <h3>О нас</h3>
+                <ul>
+                    <li><a href="#">Наши магазины</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Сотрудничество</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Покупателям</h3>
+                <ul>
+                    <li><a href="#">Доставка и оплата</a></li>
+                    <li><a href="#">Возврат и обмен</a></li>
+                    <li><a href="#">Частые вопросы</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Мы в соц сетях</h3>
+                <ul class="social-list">
+                    <li><a href="#"><img src="img/instagram.png" alt="Instagram"> Instagram</a></li>
+                    <li><a href="#"><img src="img/vk-no-bg-preview (carve.photos).png" alt="VK"> VK</a></li>
+                    <li><a href="#"><img src="img/Group 1000007033.png" alt="Telegram"> Telegram</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+function getCart() { return JSON.parse(localStorage.getItem('cart')) || []; }
+function getFavs() { return JSON.parse(localStorage.getItem('favs')) || []; }
+function addToCart(cardElement) {
+    let name = cardElement.querySelector('.product-name').innerText.replace(/\n/g, ' ').trim();
+    let priceText = cardElement.querySelector('.product-price').innerText;
+    let price = parseInt(priceText.match(/\d+/g).pop());
+    let imgSrc = cardElement.querySelector('.product-img').getAttribute('src');
+    let cart = getCart();
+    if (!cart.find(item => item.name === name)) {
+        cart.push({ name: name, price: price, img: imgSrc });
+        localStorage.setItem('cart', JSON.stringify(cart));
+        alert(name + ' добавлен в корзину!');
+    } else {
+        alert('Этот товар уже в корзине');
+    }
+}
+function addToFav(cardElement) {
+    let name = cardElement.querySelector('.product-name').innerText.replace(/\n/g, ' ').trim();
+    let priceText = cardElement.querySelector('.product-price').innerText;
+    let price = parseInt(priceText.match(/\d+/g).pop());
+    let imgSrc = cardElement.querySelector('.product-img').getAttribute('src');
+    let favs = getFavs();
+    if (!favs.find(item => item.name === name)) {
+        favs.push({ name: name, price: price, img: imgSrc });
+        localStorage.setItem('favs', JSON.stringify(favs));
+        alert(name + ' добавлен в избранное!');
+    } else {
+        alert('Этот товар уже в избранном');
+    }
+}
+function renderLists() {
+    const cartList = document.getElementById('cart-list');
+    if (cartList) {
+        let cart = getCart();
+        let total = 0;
+        cartList.innerHTML = '';
+        if (cart.length === 0) cartList.innerHTML = '<p style="text-align:center; width:100%;">Корзина пуста</p>';
+        
+        cart.forEach((item, index) => {
+            total += item.price;
+            cartList.innerHTML += `
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="${item.img}" class="product-img">
+                    </div>
+                    <p class="product-name">${item.name}</p>
+                    <p class="product-price">${item.price}₽</p>
+                    <button onclick="removeFromCart(${index})" class="btn-buy" style="background:#fff; border:1px solid #E7BABF;">Удалить</button>
+                </div>
+            `;
+        });
+        const totalDiv = document.getElementById('total-price');
+        if(totalDiv) totalDiv.innerText = 'Итого: ' + total + '₽';
+    }
+    const favList = document.getElementById('favorites-list');
+    if (favList) {
+        let favs = getFavs();
+        favList.innerHTML = '';
+        if (favs.length === 0) favList.innerHTML = '<p style="text-align:center; width:100%;">В избранном пока пусто</p>';
+
+        favs.forEach((item, index) => {
+            favList.innerHTML += `
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="${item.img}" class="product-img">
+                    </div>
+                    <p class="product-name">${item.name}</p>
+                    <p class="product-price">${item.price}₽</p>
+                    <button onclick="removeFromFav(${index})" class="btn-buy" style="background:#fff; border:1px solid #E7BABF;">Удалить</button>
+                </div>
+            `;
+        });
+    }
+}
+function removeFromCart(index) {
+    let cart = getCart();
+    cart.splice(index, 1);
+    localStorage.setItem('cart', JSON.stringify(cart));
+    renderLists();
+}
+function removeFromFav(index) {
+    let favs = getFavs();
+    favs.splice(index, 1);
+    localStorage.setItem('favs', JSON.stringify(favs));
+    renderLists();
+}
+function searchProducts() {
+    let input = document.getElementById('searchInput').value.toLowerCase();
+    let cards = document.querySelectorAll('.product-card');
+    cards.forEach(card => {
+        let title = card.querySelector('.product-name') ? card.querySelector('.product-name').innerText.toLowerCase() : '';
+        if (title.includes(input)) {
+            card.style.display = 'flex';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
+function toggleSearch() {
+        const input = document.getElementById('searchInput');
+        input.classList.toggle('active');
+        if (input.classList.contains('active')) {
+            input.focus();
+        }
+    }
+    document.addEventListener('click', function(event) {
+        const container = document.querySelector('.search-container');
+        const input = document.getElementById('searchInput');
+        
+        if (container && !container.contains(event.target) && input.classList.contains('active')) {
+            input.classList.remove('active');
+            input.value = '';
+            searchProducts();
+        }
+    });
+    document.addEventListener('DOMContentLoaded', () => {
+    renderLists();
+    document.querySelectorAll('.product-card').forEach(card => {
+        if(card.closest('#cart-list') || card.closest('#favorites-list')) return;
+
+        let btnBuy = card.querySelector('.btn-buy');
+        let btnFav = card.querySelector('.btn-fav');
+
+        if (btnBuy) {
+            btnBuy.addEventListener('click', (e) => {
+                e.preventDefault();
+                addToCart(card);
+            });
+        }
+        if (btnFav) {
+            btnFav.addEventListener('click', (e) => {
+                e.preventDefault();
+                addToFav(card);
+            });
+        }
+    });
+});
+</script>
+</body>
+</html>
